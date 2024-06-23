@@ -1,0 +1,68 @@
+*{
+    color: rgb(50, 50, 50);
+    font: 20px Georgia, serif;
+}
+body{
+    background-color: rgb(50, 50, 50);
+    padding-left: calc((50vw - 500px));
+    padding-right: calc((50vw - 500px));
+    padding-top: 80px;
+    padding-bottom: 180px;
+}
+#container{
+    width: 1000px;
+    display: grid;
+    grid-template-areas: 
+    'one five five'
+    'two three three'
+    'four four four';
+    row-gap: 3px;
+}
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+    text-align: center;
+}
+#three{
+    grid-area: three;
+}
+#four{
+    grid-area: four;
+}
+#intro{
+    grid-area: five;
+}
+#list{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#years{
+    list-style: none;
+}
+h1{
+    font: 50px Futura, sans-serif;
+}
+h2{
+    font: 35px Futura, sans-serif;
+}
+img{
+    width: 70%;
+    height: auto;
+    margin: 40px 15% auto 15%;
+    border-radius: 500px;
+    padding: 0;
+}
+.stuff{
+    background-color: aliceblue;
+    padding: 10px 10% 20px 10%;
+}
+a{
+    text-decoration: none;
+    color:rgb(124, 172, 188);
+}
+a:hover{
+    color: black;
+    transition: 0.5s;
+}
